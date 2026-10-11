@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <p>Watch Bubble Sort arrange numbers in ascending order.</p>
+
+        
+<div class="controls">
+    <button id="generate">Generate New Array</button>
+    <button id="sort">Start Bubble Sort</button>
+</div>
+
+<div class="speed-control">
+    <label for="speed">Sorting Speed:</label>
+    <input type="range" id="speed" min="10" max="200" value="60">
+    <span id="speedValue">60 ms</span>
+</div>
+
+<div class="stats">
+    <div class="stat-card">
+        <span>Comparisons</span>
+        <strong id="comparisons">0</strong>
+    </div>
+    <div class="stat-card">
+        <span>Array Size</span>
+        <strong id="arraySize">30</strong>
+    </div>
+</div>
+
+<div id="bars"></div>
+
+<p id="status">Generate an array to get started!</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
